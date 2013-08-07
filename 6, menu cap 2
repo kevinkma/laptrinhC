@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+  clrscr();
+  int menu,submenu;
+  printf("******************\n");
+  printf("      Menu      \n");
+  printf("******************\n");
+  printf("1. File\n");
+  printf("2. Edit\n");
+  printf("3. Search\n");
+  printf("Chon chuc nang tuong ung: ");
+  scanf("%d",&menu);
+  switch(menu)
+  {
+    case 1: printf("*******************\n");
+            printf("     menu       \n");
+            printf("*******************\n");
+            printf("1. New file\n");
+            printf("2. Open file\n");
+            printf("Chon chuc nang tuong ung: ")
+            scanf("%d",&submenu);
+            switch(submenu)
+            {
+              case 1: printf("ban da chon chuc nang New file");
+                      break;
+              case 2: printf("ban da chon chuc nang open file");
+                      break;
+            }
+            break;
+    case 2: printf("ban da chon chuc nang Edit file");
+            break;
+    case 3: printf("ban da chon chuc nang Search file");
+  };
+  getch();
+}
