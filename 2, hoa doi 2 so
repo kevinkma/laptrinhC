@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+void main(void)
+{
+  int a,b,tg;
+  printf("nhap a: ");
+  scanf("%d",&a);
+  printf("nhap b: ");
+  scanf("%d",&b);
+  if (a>b)
+  {
+    tg=a;
+    a=b;
+    b=tg;
+  }
+  printf("ket qua la: a=%d, b=%d",a,b);
+  getch();
+}
