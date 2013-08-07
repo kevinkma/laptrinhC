@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main(void)
+{
+  int a,b,max;
+  printf("nhap a: ");
+  scanf("%d",&a);
+  printf("nhap b: ");
+  scanf("%d",&b);
+  max=a;
+  if (b>a)
+  max=b;
+  printf("gia tri lon nhat la: %d",max);
+  getch();
+}
