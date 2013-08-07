@@ -1,0 +1,12 @@
+// chuyen chu thuong sang chu hoa
+#include <stdio.h>
+#include <conio.h>
+void main(void)
+{
+  char c;
+  printf("nhap vao 1 ki tu: ");
+  scanf("%c",&c);
+  c=c-32;         //chuyen sang chu in hoa 
+  printf("chu in hoa la: %c",c);
+  getch();
+}
