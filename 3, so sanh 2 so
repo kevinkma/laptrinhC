@@ -1,0 +1,40 @@
+// cach 1
+#include <stdio.h>
+#include <conio.h>
+void main(void)
+{
+  int a,b;
+  printf("nhap a: ");
+  scanf("%d",&a);
+  printf("nhap b: ");
+  scanf("%d",&b);
+  if (a==b)
+   printf("a bang b\n");
+  else 
+   {
+     if (a>b)
+      printf("a lon hon b");
+     else
+      printf("a nho hon b");
+   }
+  getch();
+}
+
+// cach 2: su dung else if
+#include <stdio.h>
+#include <conio.h>
+void main(void)
+{
+  int a,b;
+  printf("nhap a: ");
+  scanf("%d",&a);
+  printf("nhap b: ");
+  scanf("%d",&b);
+  if (a==b)
+   printf("a bang b\n");
+  else if (a>b)
+   printf("a lon hon b");
+  else
+   printf("a nho hon b");
+  getch();
+}
