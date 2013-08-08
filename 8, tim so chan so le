@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+  int a;
+  printf("nhap 1 so nguyen duong; ");
+  scanf("%d",&a);
+  if (a%2==0)
+   printf("day la so chan !");
+  else
+   printf("day laso le !");
+  getch();
+}
