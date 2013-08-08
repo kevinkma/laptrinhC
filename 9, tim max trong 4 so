@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+  int a,b,c,d,max;
+  printf("nhap so a: ");
+  scanf("%d",&a);
+  printf("nhap so b: ");
+  scanf("%d",&b);
+  printf("nhap so c: ");
+  scanf("%d",&c);
+  printf("nhap so d: ");
+  scanf("%d",&d);
+  max=a;
+  if (max <b)
+   max=b;
+  if (max <c)
+   max=c;
+  if (max <d)
+   max=d;
+  printf("so lon nhat la: %d",max);
+  getch();
+}
