@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+  clrscr();
+  char chon,chon1;
+  printf("**** tro choi oan tu ti ****\n");
+  printf("luat choi: ban lua chon bua(B), keo(K), giay(G) \n");
+  printf("Lua chon cua ban: ");
+  scanf("%s",&chon);
+  switch(chon)
+  {
+    case 'b':
+    case 'B': printf("ban da chon bua(B)\n");
+              printf("oan tu ti ra cai gi ra cai nay: ");
+              scanf("%s",&chon1);
+    switch(chon1)
+    {
+      case 'b': 
+      case 'B': printf("bua hoa voi bua");
+                break;
+      case 'k':
+      case 'K': printf("keo thua bua");
+                break;
+      case 'g': 
+      case 'G': printf("giay thang bua");
+    } break;
+    case 'k':
+    case 'K': printf("ban da chon keo(K)\n");
+              printf("oan tu ti ra cai gi ra cai nay: ");
+              scanf("%s",&chon1);
+    switch(chon1)
+    {
+      case 'b': 
+      case 'B': printf("keo thua bua");
+                break;
+      case 'k':
+      case 'K': printf("keo hoa voi keo");
+                break;
+      case 'g': 
+      case 'G': printf("giay thua keo");
+    } break;
+    case 'g':
+    case 'G': printf("ban da chon giay(G)\n");
+              printf("oan tu ti ra cai gi ra cai nay: ");
+              scanf("%s",&chon1);
+    switch(chon1)
+    {
+      case 'b': 
+      case 'B': printf("bua thua giay");
+                break;
+      case 'k':
+      case 'K': printf("keo thang giay");
+                break;
+      case 'g': 
+      case 'G': printf("giay hoa voi giay");
+    } break;
+  };
+  getch();
+}
