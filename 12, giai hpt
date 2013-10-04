@@ -1,0 +1,36 @@
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  float a,b,c,d,e,f,D,Dx,Dy;
+  printf("nhap a= ");
+  scanf("%f",&a);
+  printf("nhap b= ");
+  scanf("%f",&b);
+  printf("nhap c= ");
+  scanf("%f",&c);
+  printf("nhap d= ");
+  scanf("%f",&d);
+  printf("nhap e= ");
+  scanf("%f",&e);
+  printf("nhap f= ");
+  scanf("%f",&f);
+  D=a*e-b*d;
+  Dx=c*e-d*f;
+  dy=a*f-c*d;
+  if (D!=0)
+  {
+    printf("He co 2 nghiem: ");
+    printf("x= %1.2f",&Dx/D);
+    printf("y= %1.2f",&Dy/D);
+  }
+  else
+  {
+    if ((Dx!=0) && (Dy!=0))
+    printf("He phuong trinh vo nghiem");
+    if ((Dx==0) || (Dy==0))
+    printf("he phuong trinh vos so nghiem");
+  }
+  getch();
+}
