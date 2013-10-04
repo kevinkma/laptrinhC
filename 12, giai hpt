@@ -18,7 +18,7 @@ int main(void)
   scanf("%f",&f);
   D=a*e-b*d;
   Dx=c*e-d*f;
-  dy=a*f-c*d;
+  Dy=a*f-c*d;
   if (D!=0)
   {
     printf("He co 2 nghiem: ");
