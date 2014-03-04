@@ -11,19 +11,19 @@ void main()
   printf("nhap c: ");
   scanf("%f",&c);
   delta=b*b-4*a*c;
-  if (a==0)
+  if (a == 0)
    printf("phuong trinh co nghiem x= %f",-c/b);
   else
   {
-    if (delta<0)
+    if (delta < 0)
      printf("phuong trinh vo nghiem.");
-    else if (delta==0)
+    else if (delta == 0)
      printf("phuong trinh co nghiem duy nhat: x= %f",-b/(2*a));
     else
     {
      printf("phuong trinh co 2 nghiem phan biet: ");
-     printf("x1= %f",(-b-sqrt(delta))/(2*a));
-     printf("x1= %f",(-b+sqrt(delta))/(2*a));
+     printf("x1 = %f",(-b-sqrt(delta))/(2*a));
+     printf("x1 = %f",(-b+sqrt(delta))/(2*a));
     }
   }
   getch();
